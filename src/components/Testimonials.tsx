@@ -26,31 +26,31 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
-    <section className="py-20 px-4 gradient-subtle">
+    <section className="py-12 md:py-20 px-4 gradient-subtle">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold">What Others Are Saying</h2>
-          <p className="text-lg text-muted-foreground">
+        <div className="text-center space-y-3 md:space-y-4 mb-10 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">What Others Are Saying</h2>
+          <p className="text-base sm:text-lg text-muted-foreground px-4">
             Real experiences from Boohoo enthusiasts
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}
-              className="p-6 space-y-4 shadow-card hover:shadow-soft transition-all duration-300 hover:-translate-y-1 border-border/50"
+              className="p-5 md:p-6 space-y-3 md:space-y-4 shadow-card hover:shadow-soft transition-all duration-300 hover:-translate-y-1 border-border/50"
             >
               <div className="flex gap-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                  <Star key={i} className="w-3.5 h-3.5 md:w-4 md:h-4 fill-primary text-primary" />
                 ))}
               </div>
-              <p className="text-foreground leading-relaxed">
+              <p className="text-sm md:text-base text-foreground leading-relaxed">
                 "{testimonial.quote}"
               </p>
               <div className="pt-2 border-t border-border">
-                <p className="font-semibold text-sm">{testimonial.name}</p>
+                <p className="font-semibold text-xs md:text-sm">{testimonial.name}</p>
                 <p className="text-xs text-muted-foreground">{testimonial.location}</p>
               </div>
             </Card>

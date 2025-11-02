@@ -5,13 +5,13 @@ const OFFER_URL = "https://glstrk.com/?offer_ids=MzA5LDI0Nw%3D%3D&affiliate_id=M
 
 export const FinalCTA = () => {
   return (
-    <section className="py-24 px-4 bg-background">
-      <div className="max-w-3xl mx-auto text-center space-y-8">
-        <div className="space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">
+    <section className="py-16 md:py-24 px-4 bg-background">
+      <div className="max-w-3xl mx-auto text-center space-y-6 md:space-y-8">
+        <div className="space-y-3 md:space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg sm:text-xl text-muted-foreground px-4">
             Join thousands of fashion enthusiasts earning Boohoo rewards
           </p>
         </div>
