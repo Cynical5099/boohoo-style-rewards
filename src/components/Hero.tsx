@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-const OFFER_URL = "https://glstrk.com/?offer_ids=MzA5LDI0Nw%3D%3D&affiliate_id=MjE2NjQ%3D";
+const OFFER_URL = "https://glstrk.com/?offer_ids=MzA5LDI0Nw%3D%3D&affiliate_id=MTM0NjEw&source=dGlrdG9r";
 
 export const Hero = () => {
   return (
